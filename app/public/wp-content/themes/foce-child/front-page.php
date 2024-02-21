@@ -8,7 +8,7 @@ get_header();
     <main id="primary" class="site-main">
 
         <section class="banner" >
-            <video class="video banner-image-backup" autoplay loop muted plays-inline>
+            <video class="video banner-image-backup" autoplay loop muted plays-inline poster="/images_koukaki/banner.png">
                 <source src="<?php echo get_stylesheet_directory_uri(). '/images_koukaki/Koukaki-vidéo.mp4' ?> " type="video/mp4">
             </video>
             <div class="parallax">
