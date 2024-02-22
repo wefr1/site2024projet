@@ -681,3 +681,20 @@
     margin-left: auto;
   }
 }
+
+
+.position-libre {
+  position: absolute;
+  top: 382px;
+  left: 38px;
+
+  animation: rotateImage 7s linear infinite
+}
+
+.position-p {
+  position: absolute;
+  top: 25px;
+  left: 1087px;
+
+  animation: rotateImage 7s linear infinite
+}

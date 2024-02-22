@@ -16,21 +16,13 @@ get_header();
             </div>
         </section>
         <section id="story" class="story fade-in-section">
+    <img class="position-libre" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Sunflower.png' ?>">
+    <img class="position-p" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Hibiscus.png' ?>">
             <h2 class="title-h2"><span class ="sectionTitles fade-in-section" >L'histoire</span>
             </h2>
             <article id="" class="story__article">
                 <p class="fade-in-section"><?php echo get_theme_mod('story'); ?></p>
             </article>
-            <?php
-            $args = array(
-                'post_type' => 'characters',
-                'posts_per_page' => -1,
-                'meta_key'  => '_main_char_field',
-                'orderby'   => 'meta_value_num',
-
-            );
-            $characters_query = new WP_Query($args);
-            ?>
             <div>
             <article id="characters" class="fade-in-section">
                     <h3>
