@@ -85,22 +85,29 @@ window.addEventListener('scroll', function () {
     }
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper-container", {
+    spaceBetween: 60,
+    speed: 1000,
+    autoplay: {
+      delay: 250,
+    },
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: "auto",
+    loop: true,
+    slidesPerView: 3,
     coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true,
+      rotate: 60,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: false,
     },
-    pagination: {
-        el: ".swiper-pagination",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
     },
-});
+  });
 
 
 // Sections Scroll//
