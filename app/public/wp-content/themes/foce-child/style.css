@@ -291,12 +291,13 @@
 .story #place .bigCloud {
   position: absolute;
   background-image: none;
-  margin-left: 950px;
+  margin-left: 800px;
   filter: blur(15px);
+  top:70px
 }
 
 .story #place .littleCloud {
-  margin-left: 650px;
+  margin-left: 503px;
   filter: blur(10px);
 }
 
@@ -697,4 +698,46 @@
   left: 1087px;
 
   animation: rotateImage 7s linear infinite
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.swiper-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Assure que les éléments restent sur une seule ligne */
+}
+
+.swiper-slide {
+  flex: 0 0 auto; /* Empêche le redimensionnement des éléments */
+  margin-right: 10px; /* Espacement entre les éléments */
+}
+
+.swiper-slide figure {
+  margin: 0; /* Réinitialise les marges pour éviter les espaces inutiles */
+}
+
+
+.swiper-slide h4 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  text-align: center;
 }
